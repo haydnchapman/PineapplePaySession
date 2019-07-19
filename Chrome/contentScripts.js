@@ -5,6 +5,15 @@ const main = () => {
             this.version = version;
             this.paymentRequest = paymentRequest;
         }
+        
+        static STATUS_SUCCESS = 1;
+        static STATUS_FAILURE = 2;
+        static STATUS_INVALID_BILLING_POSTAL_ADDRESS = 3;
+        static STATUS_INVALID_SHOPPING_CONTACT = 4;
+        static STATUS_INVALID_SHOPPING_POSTAL_ADDRESS = 5;
+        static STATUS_PIN_INCORRECT = 6;
+        static STATUS_PIN_LOCKOUT = 7;
+        static STATUS_PIN_REQUIRED = 8;
     
         static supportsVersion(versionNumber) {
             return true;
@@ -17,8 +26,6 @@ const main = () => {
        static canMakePaymentsWithActiveCard() {
             return Promise.resolve(this.canMakePayments());
         }
-
-        static STATUS_SUCCESS = "SUCCESS";
 
         completeMerchantValidation(response){
             console.log('completeMerchantValidation', response);
