@@ -7,8 +7,7 @@
         "js":["contentScripts.js"],
         "css":["appleCss.css"]
     }],
-    "web_accessible_resources" : ["/background.js"],
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
     "permissions": ["storage", "webNavigation", "activeTab", "tabs"],
     "browser_action": {
