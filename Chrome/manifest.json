@@ -1,10 +1,6 @@
 {
     "name": "PineapplePay Mock",
     "description": "Mock the ApplePaySession API from Safari for easier testing during development",
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-    },
     "content_scripts": [{
         "matches":["*://*/*"],
         "run_at": "document_start",
