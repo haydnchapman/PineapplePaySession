@@ -33,7 +33,7 @@ const main = () => {
             const mockPaymentData = {
                 version: "mock_v1",
                 data: "mockData",
-                sigature: "mockSignature",
+                signature: "mockSignature",
                 header: {
                     ephemeralPublicKey: "mockPublicKey",
                     publicKeyHash: "mockPublicKeyHash",
