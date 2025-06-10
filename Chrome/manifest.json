@@ -10,7 +10,7 @@
     "version": "1.1",
     "manifest_version": 3,
     "permissions": ["storage", "webNavigation", "activeTab", "tabs"],
-    "browser_action": {
+    "action": {
         "default_popup": "index.html",
         "default_icon": "pineapple.png"
     }
